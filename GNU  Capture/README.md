@@ -1,5 +1,5 @@
-**README for LESSON8.gnu**
-Note: lab3.gnu is from an old attempt that was abandonded from the lab
+**README for LESSON8.grc**
+Note: lab3.grc is from an old attempt that was abandonded from the lab
 
 Lesson 8 consists of three main blocks: 
 - osmocom source
