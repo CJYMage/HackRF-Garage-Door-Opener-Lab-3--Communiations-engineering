@@ -441,7 +441,7 @@ blocks:
     autoscale: 'False'
     average: '1.0'
     axislabels: 'True'
-    bw: samp_rate
+    bw: freq
     color1: '"blue"'
     color10: '"dark blue"'
     color2: '"red"'

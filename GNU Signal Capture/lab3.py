@@ -77,7 +77,7 @@ class lab3(gr.top_block, Qt.QWidget):
             1024, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
-            samp_rate, #bw
+            freq, #bw
             "", #name
             1,
             None # parent
@@ -152,7 +152,6 @@ class lab3(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.osmosdr_source_0.set_sample_rate(self.samp_rate)
-        self.qtgui_freq_sink_x_0.set_frequency_range(0, self.samp_rate)
 
     def get_freq(self):
         return self.freq
@@ -160,6 +159,7 @@ class lab3(gr.top_block, Qt.QWidget):
     def set_freq(self, freq):
         self.freq = freq
         self.osmosdr_source_0.set_center_freq(self.freq, 0)
+        self.qtgui_freq_sink_x_0.set_frequency_range(0, self.freq)
 
 
 
